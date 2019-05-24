@@ -3,8 +3,8 @@ FROM webdevops/php-apache-dev:7.3
 LABEL maintainer="emanuel@powerapp.it"
 
 # Environment variables
-ENV APPLICATION_PATH=/var/www/html \
-    WEB_DOCUMENT_ROOT=/var/www/html/web \
+ENV APPLICATION_PATH=/app \
+    WEB_DOCUMENT_ROOT=index.php \
     PHP_DEBUGGER=xdebug  \
     PHP_MEMORY_LIMIT=1024M \
     PHP_DATE_TIMEZONE=Europe/Rome \
