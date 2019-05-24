@@ -25,9 +25,9 @@ cfr: https://github.com/webdevops/Dockerfile/tree/master/docker/php-apache-dev/7
                 - pma
                 - mailhog
             volumes:
-                - "./docroot:/var/www/html"
+                - "./docroot:/app"
             environment:
-                WEB_DOCUMENT_ROOT: "/var/www/html/web"
+                WEB_DOCUMENT_ROOT: "/app/public"
                 PHP_IDE_CONFIG: "serverName=localhost"
                 POSTFIX_RELAYHOST: "mailhog:1025"
 
