@@ -15,7 +15,7 @@ cfr: https://github.com/webdevops/Dockerfile/tree/master/docker/php-apache-dev/7
 
     services:
         web-app:
-            image: powerapp-it/php-apache-dev:latest
+            image: powerapp/php-apache-dev:latest
             ports:
                 - "80:80"
             depends_on:
